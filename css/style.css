@@ -84,6 +84,29 @@ body{
 }
 
 /*
+** Responsive design for the personal info section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .header nav{
+        font-size: 0.8em;
+    }
+
+    .header-text{
+        grid-template-columns: 1fr 1fr;
+        transform: translate(+50%, +25%);
+    }
+
+    .header-text h1{
+        font-size: 1.2em;
+    }
+
+    .header-text h3{
+        display: none;
+    }
+}
+
+/*
 ** Main body style
 */
 
@@ -160,6 +183,10 @@ body{
         height: auto;
         grid-row: auto;
     }
+
+    .info-text h2{
+        font-size: 1.5em;
+    }
 }
 
 /*
@@ -175,7 +202,7 @@ body{
 
     /* Style of the info box in the page */
     margin: 2% 0%;
-    padding: 2% 2%;
+    padding: 2% 0%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
@@ -184,15 +211,35 @@ body{
 }
 
 .info-welcome h2{
+    padding-inline: 5%;
     font-size: 1.8em;
     color: #d16d16;
 }
 
 .info-welcome p{
+    padding-inline: 5%;
     font-size: 1em;
     line-height: 1.6;
     color: #333;
 }
+
+/*
+** Responsive design for the personal info welcome section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .info-welcome h2{
+        font-size: 1.5em;
+    }
+
+    .info-welcome p{
+        font-size: 1em;
+    }
+}
+
+/*
+** Style for the education section
+*/
 
 .edu{
     /* Position and structure of the info box in the page */
@@ -202,13 +249,14 @@ body{
     margin: 2% 0%;
     padding: 2% 0%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
 }
 
 .edu h2{
+    padding-inline: 5%;
     font-size: 1.8em;
     color: #d16d16;
 }
@@ -217,8 +265,22 @@ body{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 2fr;
-    gap: 5%;
-    padding: 0% 2%;
+
+    /* Style of the info box in the page */
+    margin: 5% 0%;
+    padding: 2% 0%;
+    background-color: #f0f2f4;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title p{
+    padding-inline: 5%;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
 }
 
 .school{
@@ -227,37 +289,68 @@ body{
 }
 
 .school h3{
+    padding-inline: 15%;
     font-size: 1.2em;
     color: #021f45;
 }
 
 .school h4{
+    padding-inline: 15%;
     font-size: 1em;
     color: #021f45;
 }
 
-.title p{
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
+/*
+** Responsive design for the personal info education section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .edu h2{
+        font-size: 1.5em;
+    }
+
+    .title{
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .title p{
+        text-align: center;
+    }
+
+    .school h3{
+        margin: 0 0;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .school h4{
+        margin: 0 0;
+        text-align: center;
+        font-size: 0.9em;
+    }
 }
+
+/*
+** Style for the work section
+*/
 
 .work{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
 
     /* Style of the info box in the page */
     margin: 2% 0%;
-    padding: 2% 2%;
+    padding: 2% 0%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
 }
 
 .work h2{
+    padding-inline: 5%;
     font-size: 1.8em;
     color: #d16d16;
 }
@@ -266,17 +359,22 @@ body{
     /* Position and structure of the info box in the page */
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: start;
     gap: 5%;
 
     /* Style of the info box in the page */
     margin: 2% 0%;
-    padding: 2% 2%;
+    padding: 2% 0%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
+}
+
+.job p{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
 }
 
 .company{
@@ -285,6 +383,8 @@ body{
 }
 
 .company h3{
+    padding-inline: 5%;
+    transform: translateX(+10%);
     font-size: 1.2em;
     color: #021f45;
 }
@@ -292,13 +392,24 @@ body{
 .company h4{
     display: flex;
     flex-direction: column;
+
+    padding-inline: 5%;
+    transform: translateX(+10%);
     font-size: 1em;
     color: #333;
     color: #021f45;
 }
 
-.work p{
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
+@media (max-width: 768px) {
+    .work h2{
+        font-size: 1.5em;
+    }
+
+    .company h3{
+        font-size: 1em;
+    }
+
+    .company h4{
+        font-size: 0.9em;
+    }
 }
