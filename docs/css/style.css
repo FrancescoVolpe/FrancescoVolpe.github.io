@@ -42,10 +42,15 @@ header nav ul{
     list-style: none;
 }
 
-header nav a{
+header nav ul a{
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
+    text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 header h1,
@@ -91,6 +96,15 @@ header h3{
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.2em;
+    }
+
+    header nav{
+        top: 10px;
+        right: 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
     }
 }
 
