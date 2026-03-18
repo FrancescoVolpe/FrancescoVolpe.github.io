@@ -46,11 +46,7 @@ header nav ul a{
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
-    text-shadow:
-        -1px -1px 0 black,  
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
+    text-shadow: 2px 2px 5px black;
 }
 
 header h1,
@@ -105,10 +101,6 @@ header h3{
 
     header nav ul{
         gap: 15px;
-    }
-
-    header nav ul a{
-        text-shadow: none;
     }
 }
 
