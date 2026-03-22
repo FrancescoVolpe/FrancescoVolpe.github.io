@@ -471,8 +471,6 @@ footer p{
 .edu{
     /* Position and structure of the info box in the page */
     width: 100%;
-    justify-items: center;
-    align-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -546,6 +544,10 @@ footer p{
 */
 
 @media (max-width: 768px) {
+    .edu{
+        justify-items: center;
+    }
+
     .edu h2{
         text-align: center;
         font-size: 1.5em;
@@ -581,8 +583,6 @@ footer p{
 .work{
     /* Position and structure of the info box in the page */
     width: 100%;
-    justify-items: center;
-    align-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -656,6 +656,10 @@ footer p{
 */
 
 @media (max-width: 768px) {
+    .work{
+        justify-items: center;
+    }
+
     .work h2{
         text-align: center;
         font-size: 1.5em;
