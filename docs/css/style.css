@@ -553,6 +553,7 @@ footer p{
         width: 90%;
         grid-template-columns: 1fr;
         padding: 15px 0;
+        margin: 20px auto;
     }
 
     .title p{
@@ -567,7 +568,7 @@ footer p{
         align-self: center;
         text-align: center;
         margin: 0 0;
-        padding: 10px 0;
+        padding: 10px 5%;
     }
 }
 
@@ -576,8 +577,11 @@ footer p{
 */
 
 .work{
+    outline: 1px solid red;
     /* Position and structure of the info box in the page */
     width: 100%;
+    align-items: center;
+    justify-items: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -590,12 +594,14 @@ footer p{
 }
 
 .work h2{
+    justify-self: left;
     font-size: 1.8em;
     padding-inline: 5%;
     color: #d16d16;
 }
 
 .job{
+    outline: 1px solid red;
     /* Style of the box */
     width: 95%;
     border-radius: 8px;
@@ -652,6 +658,7 @@ footer p{
 
 @media (max-width: 768px) {
     .work h2{
+        justify-self: center;
         text-align: center;
         font-size: 1.5em;
     }
@@ -660,6 +667,7 @@ footer p{
         width: 90%;
         grid-template-columns: 1fr;
         padding: 15px 0;
+        margin: 20px auto;
     }
 
     .job p{
@@ -674,7 +682,7 @@ footer p{
         grid-column: 1;
         text-align: center;
         margin: 0 0;
-        padding: 10px 0;
+        padding: 10px 5%;
     }
 }
 
