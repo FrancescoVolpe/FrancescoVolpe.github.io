@@ -589,7 +589,6 @@ footer p{
     }
 
     .title{
-        width: 90%;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
@@ -682,7 +681,7 @@ footer p{
     font-size: 1.2em;
 }
 
-.company h3{
+.company h4{
     font-size: 1em;
 }
 
@@ -698,7 +697,6 @@ footer p{
     }
 
     .job{
-        width: 90%;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
@@ -716,6 +714,136 @@ footer p{
         text-align: center;
         margin: 0 0;
         padding: 10px 5%;
+    }
+}
+
+/*
+** Style for the tongues section
+*/
+
+.languages{
+    /* Position and structure of the info box in the page */
+    width: 95%;
+    justify-self: center;
+    align-items: center;
+
+    /* Style of the info box in the page */
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.languages h2,
+.languages p{
+    padding-inline: 5%;
+}
+
+.languages h2{
+    font-size: 1.8em;
+    color: #d16d16;
+}
+
+.languages p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.tongue{
+    /* Style of the box */
+    width: 95%;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+
+    /* Position and structure of the info box in the page */
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    /* Style of the info box in the page */
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: #f0f2f4;
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tongue h3,
+.tongue h4{
+    grid-column: 1;
+    margin: 0 0;
+    padding: 10px 7%;
+    color: #021f45;
+}
+
+.tongue h3{
+    font-size: 1.2em;
+}
+
+.tongue h4{
+    font-size: 1em;
+}
+
+.level-bars{
+    grid-column: 2;
+    width: 95%;
+    display: flex;
+    gap: 4px; /* Spazio tra le tacche */
+    align-items: flex-end; /* Tacche allineate alla base */
+    height: 20px;
+    padding-inline: 5%;
+}
+
+.small-bar{
+    width: 6.5%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.small-bar-filled{
+    width: 6.5%;
+    height: 100%;
+    background-color: #021f45;
+    border-radius: 8px;
+}
+
+/*
+** Responsive design for the languages section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .languages h2{
+        justify-self: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .tongue{
+        grid-template-columns: 1fr;
+        padding: 15px 0;
+    }
+
+    .tongue h3,
+    .tongue h4{
+        align-self: center;
+        grid-column: 1;
+        text-align: center;
+        margin: 0 0;
+        padding: 10px 0;
+    }
+
+    .level-bars{
+        grid-column: 1;
+        padding: 10px 5%;
+        justify-self: center;
     }
 }
 
