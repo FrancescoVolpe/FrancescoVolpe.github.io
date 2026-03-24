@@ -223,7 +223,7 @@ footer p{
 }
 
 .info img{
-    width: 90%;
+    width: 95%;
     max-width: 320px;
     height: auto;
     padding: 15px 0;
@@ -234,7 +234,7 @@ footer p{
 .info-text{
     /* Position of the header text inside the header box */
     display: flex;
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     align-self: center;
     justify-self: start;
@@ -318,7 +318,7 @@ footer p{
 }
 
 .skills-intro{
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -336,7 +336,7 @@ footer p{
 }
 
 .skill-cards{
-    width: 90%;
+    width: 95%;
     margin: 20px 0;
     padding: 10px 0;
 
@@ -913,7 +913,7 @@ footer p{
 }
 
 .projects-list{
-    width: 100%;
+    width: 95%;
     margin: 20px 0;
     padding: 10px 0;
 
@@ -1045,7 +1045,7 @@ footer p{
 
 .contact form{
     grid-column: 1;
-    width: 100%;
+    width: 95%;
 
     display: flex;
     flex-direction: column;
@@ -1097,14 +1097,14 @@ footer p{
 
 .maps{
     display: flex;
-    width: 100%;
+    width: 95%;
     max-width: 750px;
     justify-content: center;
     align-self: center;
 }
 
 .maps iframe{
-    width: 90%;
+    width: 95%;
     height: 90%;
     min-height: 350px;
     border-radius: 8px;
