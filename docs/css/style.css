@@ -442,6 +442,13 @@ footer p{
         padding-inline: 5%;
         font-size: 1em;
     }
+
+    .card{
+        width: 150px;
+        height: 150px;
+        padding: 0 0px;
+        perspective: 1000px;
+    }
 }
 
 /*
